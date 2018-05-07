@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Makefile 002: CLI Data Gem--Notes to a junior (to me) dev"
-date:       2018-05-07 11:13:36 +0000
+date:       2018-05-07 07:13:37 -0400
 permalink:  makefile_002_cli_data_gem--notes_to_a_junior_to_me_dev
 ---
 
@@ -27,7 +27,7 @@ I found these migrations a lot more complex than just copy and paste because I n
 
 **Know your scope**
 
-Many of my sticking points came from being unclear about what levels of scope were operating at given places in the code. For instance, I spun my wheels for a while under the mistaken idea that I could directly access a variable from one class in another. (I needed to access them via methods). I recommend a handy illustrated guide: (https://www.sitepoint.com/understanding-scope-in-ruby/ “Understanding Scope in Ruby”) by Darko Gjorgjievski. 
+Many of my sticking points came from being unclear about what levels of scope were operating at given places in the code. For instance, I spun my wheels for a while under the mistaken idea that I could directly access a variable from one class in another. (I needed to access them via methods). I recommend a handy illustrated guide: ([http://www.sitepoint.com/understanding-scope-in-ruby/] “Understanding Scope in Ruby”) by Darko Gjorgjievski. Many of my sticking points came from being unclear about what levels of scope were operating at given places in the code. For instance, I spun my wheels for a while under the mistaken idea that I could directly access a variable from one class in another. (I needed to access them via methods). I recommend a handy illustrated guide: ([http://www.sitepoint.com/understanding-scope-in-ruby/ “Understanding Scope in Ruby”) by Darko Gjorgjievski. 
 
 **Use a linter**
 
