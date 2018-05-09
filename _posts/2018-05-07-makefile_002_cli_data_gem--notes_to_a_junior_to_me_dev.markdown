@@ -31,7 +31,7 @@ Many of my sticking points came from being unclear about what levels of scope we
 
 **Use a linter**
 
-I was using the [Visual Studio Code](https://code.visualstudio.com/) IDE for the first time for this project. Part way through coding, I upgraded to the new version and started to see green lines under parts of my code. It turns out this was a linter. Specifically, it was using [Rubocop](http://rubocop.readthedocs.io/en/latest/), which gives suggestions based on the community [Ruby Style Guide](http://github.com/bbatsov/ruby-style-guide). It flagged when classes, methods, and lines were too long or complex, indentation was misaligned, there was useless variable assignment, and much more. It’s like having a pair programmer inside the computer, and it helped me use best practices, some of which I hadn't even been aware of. It also integrates with Atom and many other tools. 
+I was using the [Visual Studio Code](https://code.visualstudio.com/) editor for the first time for this project. Part way through coding, I upgraded to the new version and started to see green lines under parts of my code. It turns out this was a linter. Specifically, it was using [Rubocop](http://rubocop.readthedocs.io/en/latest/), which gives suggestions based on the community [Ruby Style Guide](http://github.com/bbatsov/ruby-style-guide). It flagged when classes, methods, and lines were too long or complex, indentation was misaligned, there was useless variable assignment, and much more. It’s like having a pair programmer inside the computer, and it helped me use best practices, some of which I hadn't even been aware of. It also integrates with Atom and many other tools. 
 
 **Hold your head up!**
 
