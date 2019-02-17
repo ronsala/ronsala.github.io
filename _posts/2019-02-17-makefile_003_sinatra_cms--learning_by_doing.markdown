@@ -43,7 +43,9 @@ In index.erb I have this code:
 ```ruby
 
 <%@reviews.each do |review|%>
+
   <p><a href='/reviews/<%= review.id %>'><%= review.place.name %>: "<%= review.title %>"</a></p>
+	
 <%end%>
 
 ```
