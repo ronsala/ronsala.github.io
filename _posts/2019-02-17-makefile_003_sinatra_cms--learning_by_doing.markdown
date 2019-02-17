@@ -40,10 +40,14 @@ I thought I had my app ready to submit. I'd even recorded a video demo. After I 
 
 In index.erb I have this code:
 
-`<%@reviews.each do |review|%>`
-`  <p><a href='/reviews/<%= review.id %>'><%= review.place.name %>: "<%= review.title %>"</a></p>`
-`<%end%>`
-
+```ruby
+ 
+  
+<%@reviews.each do |review|%>
+  <p><a href='/reviews/<%= review.id %>'><%= review.place.name %>: "<%= review.title %>"</a></p>
+<%end%>
+ 
+  
 ```
 
 The models in the app are User, Place, and Name. For some reason, I was getting a NoMethodError when `.name` was called on `place`. It took me a while to understand why. While I was away from the computer, thinking/obsessing over the problem, it hit me: Since I'd deleted a place, the review it was written about was unable to supply the name of the (now-deleted place). To prevent this recurring I refactored part of the `/get "/places/:id/delete"` route in places_controller to:
