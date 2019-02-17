@@ -40,13 +40,9 @@ I thought I had my app ready to submit. I'd even recorded a video demo. After I 
 
 In index.erb I have this code:
 
-```ruby
-
-<%@reviews.each do |review|%>
-
-  <p><a href='/reviews/<%= review.id %>'><%= review.place.name %>: "<%= review.title %>"</a></p>
-	
-<%end%>
+`<%@reviews.each do |review|%>`
+`  <p><a href='/reviews/<%= review.id %>'><%= review.place.name %>: "<%= review.title %>"</a></p>`
+`<%end%>`
 
 ```
 
