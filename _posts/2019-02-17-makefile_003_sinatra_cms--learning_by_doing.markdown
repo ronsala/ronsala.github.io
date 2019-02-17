@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Makefile 003: Sinatra CMS--Learning By Doing"
-date:       2019-02-17 12:48:39 +0000
+date:       2019-02-17 07:48:40 -0500
 permalink:  makefile_003_sinatra_cms--learning_by_doing
 ---
 
@@ -41,9 +41,11 @@ I thought I had my app ready to submit. I'd even recorded a video demo. After I 
 In index.erb I have this code:
 
 ```ruby
+
 <%@reviews.each do |review|%>
   <p><a href='/reviews/<%= review.id %>'><%= review.place.name %>: "<%= review.title %>"</a></p>
 <%end%>
+
 ```
 
 The models in the app are User, Place, and Name. For some reason, I was getting a NoMethodError when `.name` was called on `place`. It took me a while to understand why. While I was away from the computer, thinking/obsessing over the problem, it hit me: Since I'd deleted a place, the review it was written about was unable to supply the name of the (now-deleted place). To prevent this recurring I refactored part of the `/get "/places/:id/delete"` route in places_controller to:
