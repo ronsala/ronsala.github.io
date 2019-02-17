@@ -38,18 +38,11 @@ This is the first time I'd put together a test suite. I used rspec and capybara,
 
 I thought I had my app ready to submit. I'd even recorded a video demo. After I discovered there was a problem with the recording, I deleted some sample entries I'd made so I could make the same ones in the re-recording. To my dismay, I found that one of my routes, `/reviews`, had broken.
 
-In index.erb I have this code:
+The models in the app are User, Place, and Name. In reviews_controller I have this code:
 
-```ruby
+`@reviews = Review.all.sort_by { | review | [ review.place.name.downcase, review.title.downcase ] }`
 
-<%@reviews.each do |review|%>
-  <p><a href='/reviews/<%= review.id %>'><%= review.place.name %>: "<%= review.title %>"</a></p>
-<%end%>
-
-
-```
-
-The models in the app are User, Place, and Name. For some reason, I was getting a NoMethodError when `.name` was called on `place`. It took me a while to understand why. While I was away from the computer, thinking/obsessing over the problem, it hit me: Since I'd deleted a place, the review it was written about was unable to supply the name of the (now-deleted) place. To prevent this recurring I refactored part of the `/get "/places/:id/delete"` route in places_controller to:
+For some reason, I was getting a NoMethodError when `.name` was called on `place`. It took me a while to understand why. While I was away from the computer, thinking/obsessing over the problem, it hit me: Since I'd deleted a place, the review it was written about was unable to supply the name of the (now-deleted) place. To prevent this recurring I refactored part of the `/get "/places/:id/delete"` route in places_controller to:
 
 ```ruby
 @place.reviews.each do | review |
