@@ -1,15 +1,15 @@
 ---
 layout: post
 title:      "Makefile 005: JS Project--Reuseable Functions for Adding HTML Dynamically"
-date:       2020-11-22 21:22:38 +0000
+date:       2020-11-22 16:22:38 -0500
 permalink:  makefile_005_js_project--reuseable_functions_for_adding_html_dynamically
 ---
 
 
 *“We will encourage you to develop the three great virtues of a programmer: laziness, impatience, and hubris.”--Larry Wall*
 
-![](https://github.com/ronsala/trivia-trader-backend/blob/master/public/Screenshot-home.png)
-<img src="https://github.com/ronsala/trivia-trader-backend/blob/master/public/Screenshot.png">
+![](https://github.com/ronsala/trivia-trader-backend/blob/master/public/Screenshot-home.png?raw=true)
+
 
 
 ## Overview
@@ -126,4 +126,4 @@ When all is done, we have a dynamically created set of elements to append to the
 </div>
 ```
 
-![](http://https://github.com/ronsala/trivia-trader-backend/blob/master/public/Screenshot.png)
+![](https://github.com/ronsala/trivia-trader-backend/blob/master/public/Screenshot.png?raw=true)
