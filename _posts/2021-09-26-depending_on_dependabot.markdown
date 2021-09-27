@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Depending on Dependabot"
-date:       2021-09-27 03:39:44 +0000
+title:      "Makefile 009: Depending on Dependabot"
+date:       2021-09-26 23:39:44 -0400
 permalink:  depending_on_dependabot
 ---
 
