@@ -1,0 +1,46 @@
+---
+layout: post
+title:      "Makefile 010: Fig"
+date:       2021-10-03 06:24:12 +0000
+permalink:  makefile_010_fig
+---
+
+
+Sometimes I'm amazed by how helpful a software package can be. This is definitely the case with the [Fig](https://fig.io/) library. It makes my life so much easier as a relatively new coder. I just type a few keystrokes into my terminal (I use zsh) and it shows me possible commands I can use through its autocomplete feature, and can even educate me about what's available on the command line.
+
+For example:
+
+If I'm working with Git, I need only type 'g ' and it shows me:
+
+```zsh
+g 
+
+branch
+commit -m 'msg'
+stash
+pull [remote] [branch]
+merge [branch]
+push [remote] [branch]
+```
+
+I can down-arrow through the list and get a brief description of each command and have it complete by merely hitting `return`.
+
+Or, if I'm `cd`ing around my file system, I just begin typing and it gives options to autocomplete the my most recent paths, or with a few more strokes anything on my machine:
+
+```zsh
+cd 
+
+makefile-at-large/
+blog/
+Ron-Sala-React-Code-Exercise/
+restauranter/
+react-main-concepts-exercises/
+quiet-places/
+```
+
+Fig is still in early access, requested from their homepage [https://fig.io/](https://fig.io/). It's an open source project, frequently updated, listing five people on their [Github](https://github.com/withfig), that deserves more exposure.
+
+The only issue I've had using it is that it sometimes needs to be restarted to do its magic, which is easily done from the icon at the top of my Mac screen.
+
+I suggest you check it out and see if it can help you code more efficiently.
+
