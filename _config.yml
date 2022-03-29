@@ -10,6 +10,7 @@ twitter_username: ronsala
 github_username:  ronsala
 learn_profile: ronsala
 email_username: ron.sala@gmail.com
+timezone: America/New_York
 
 # Build settings
 markdown: kramdown
