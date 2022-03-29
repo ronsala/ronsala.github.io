@@ -11,6 +11,7 @@ github_username:  ronsala
 learn_profile: ronsala
 email_username: ron.sala@gmail.com
 timezone: America/New_York
+future: true
 
 # Build settings
 markdown: kramdown
@@ -18,6 +19,5 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-future: true
 
 gems: [jekyll-paginate, jekyll-feed]
